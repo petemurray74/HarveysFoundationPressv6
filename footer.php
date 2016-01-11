@@ -12,15 +12,17 @@
 ?>
 
 		</section>
-		<div id="footer-container">
+		<aside class="row">
 			<footer id="footer">
 				<?php do_action( 'foundationpress_before_footer' ); ?>
 				<?php dynamic_sidebar( 'footer-widgets' ); ?>
 				<?php do_action( 'foundationpress_after_footer' ); ?>
 			</footer>
-		</div>
-
-		<?php do_action( 'foundationpress_layout_end' ); ?>
+		</aside>
+		<?php get_template_part('parts/footer-area');	 ?>
+		<?php 
+		
+		do_action( 'foundationpress_layout_end' ); ?>
 
 <?php if ( get_theme_mod( 'wpt_mobile_menu_layout' ) == 'offcanvas' ) : ?>
 		</div><!-- Close off-canvas wrapper inner -->
