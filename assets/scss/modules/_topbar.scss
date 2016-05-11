@@ -8,14 +8,16 @@
   .menu a {
     height: 45px;
     line-height: 45px;
-    color: #e6e6e6;
+    color: #eeeeee;
     padding-top: 0;
+	text-decoration:none;
     padding-bottom: 0;
-    font-weight: bold;
-    font-size: 0.8rem;
+    font-weight: normal;
+    font-size: 0.9rem;
 
     &:hover:not(.button) {
-      background-color: #2a2a2a;
+      color:#eeeeee;
+	  background-color:scale-color($primary-color, $lightness: -14%);
     }
   }
 
@@ -25,13 +27,13 @@
 
   .menu li:not(:last-child) {
     @include breakpoint(medium) {
-      border-right: 1px solid #4e4e4e;
+      border-right: 1px solid scale-color($primary-color, $lightness: 10%);
     }
   }
 
   .dropdown.menu .submenu {
-    background-color: #121212;
-    color: #e6e6e6;
+    background-color: $primary-color;
+    color: #eeeeee;
     border: 0;
   }
 
@@ -42,7 +44,6 @@
   .dropdown.menu .has-submenu.is-down-arrow>a::after {
     border: 0;
   }
-
 
 }
 

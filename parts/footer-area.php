@@ -1,7 +1,7 @@
 
-<div class="harveys-footer-wrap">
-<footer id="harveys-footer" class="row">
-        <aside class="large-4 small-12 columns">
+<div class="footer-container">
+<div class="row">
+        <article class="large-4 small-12 columns">
             <h3 class="widget-title">The Store</h3>
                 <p><strong>Open:</strong><br>
                 Monday-Saturday<br>
@@ -28,8 +28,8 @@
 
                 <div class="row medium-collapse"><div class="large-3 columns"><img class="alignnone size-full wp-image-1481" src="/images/footer_ais_logo.png" alt="aisLogo" width="68" height="53" /></div>
             <div class="large-9 columns">We're a proud member of Associated Independent Stores</div></div>
-        </aside>
-        <aside class="large-4 small-12 columns">
+        </article>
+        <article class="large-4 small-12 columns">
             <div class="newsletter">
             <h3 class="widget-title">Get our Newsletter</h3>
             <p>Sign up to receive exclusive offers and event invites</p>
@@ -65,14 +65,14 @@
             <p class="smallprint">You'll receive occasional mailings from Harveys. Your email address remains private and won't be shared with anyone. You can unsubscribe at any time.</p>
 
             </div> 
-        </aside>
+        </article>
 
-        <aside id="text-19" class="large-4 small-12 columns">
+        <article id="text-19" class="large-4 small-12 columns">
             <h3 class="widget-title">Twitter</h3>
             <a class="twitter-timeline" width="293" height="500" href="https://twitter.com/harveyshalifax" data-widget-id="333184045640974336" data-chrome="noborders">Tweets by @harveyshalifax</a>
             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script> 
-        </aside>
-</footer>    
+        </article>
+</div>    
 </div>
 
 

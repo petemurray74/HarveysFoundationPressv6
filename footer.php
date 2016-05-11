@@ -12,13 +12,13 @@
 ?>
 
 		</section>
-		<aside class="row">
-			<footer id="footer">
+		<div class="sub-footer-container">
+			<div class="row">
 				<?php do_action( 'foundationpress_before_footer' ); ?>
 				<?php dynamic_sidebar( 'footer-widgets' ); ?>
 				<?php do_action( 'foundationpress_after_footer' ); ?>
-			</footer>
-		</aside>
+			</div>
+		</div>
 		<?php get_template_part('parts/footer-area');	 ?>
 		<?php 
 		

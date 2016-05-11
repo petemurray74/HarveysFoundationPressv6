@@ -1,4 +1,5 @@
 //----- TYPOGRAPHY-------------------//
+
 body {
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
@@ -20,13 +21,11 @@ letter-spacing: -0.02em;
 
 .harvey-sub-head-wrap {
     background: #ffffff;
+	padding:2em 0;
 }
 
 //---------SECOND MENU----------------//
 
-.secondary-menu {
-    margin-top:0.5rem;
-}
 
 .secondary-menu li a {
 text-decoration: none;
@@ -42,13 +41,6 @@ margin: 0 rem-calc(8) 0 0;
 padding: 0 8px 0 0;
 padding: 0 rem-calc(8) 0 0;
 }
-
-//----------MAIN MENU-------------------------//
-
-.top-bar a {
-text-decoration: none;
-}
-
 
 //----------CONTENT AREA-------------------------//
 
@@ -146,69 +138,5 @@ img.alignright {
 
 //----------FOOTER-------------------------//
 
-.harveys-footer-wrap{
-clear:both;
-background-color:$primary-color;
-margin-top:rem-calc(60);
-padding:rem-calc(40);
--moz-box-shadow: 0px -2px 2px #DCD5C6;
--webkit-box-shadow: 0px -2px 2px #DCD5C6;
-box-shadow: 0px -2px 2px #DCD5C6;
-}
+//see _footer.scss
 
-footer {
-border-top: 0px solid #ededed;
-color:#F3F0ED;
-margin-top: 0;
-padding: 0px rem-calc(24);
-}
-
-footer a{
-color:#F3F0ED;
-}
-
-footer a:hover{
-color:#F3F0ED;
-text-decoration:none;
-}
-
-footer .social_media_wrap {
-margin-top:20px;
-}
-
-
-footer .social_media_entry {
-position: relative;
-}
-
-footer .social_media_txt {
-position: absolute;
-bottom: 18px;
-bottom: 1.28571428571rem;
-font-weight:bold;
-font-size:rem-calc(14);
-padding-left: 5px;
-padding-left: 0.35714285714rem;
-}
-
-footer .widget-title
-{
-color:#F3F0ED;
-}
-
-footer .widget {
-margin-bottom: rem-calc(40);
-}
-
-footer p.smallprint {
-font-size: 83%;
-}
-
-.newsletter p {
-margin-bottom: 10px;
-}
-
-footer p {
-margin: 0 0 rem-calc(24);
-line-height: 1.714285714;
-}
