@@ -82,11 +82,12 @@
 
 // Templates
 @import "templates/front";
-@import "templates/kitchen-sink";
+//@import "templates/kitchen-sink";
 @import "templates/page-default";
 @import "templates/page-sidebar-left";
 @import "templates/page-full-width";
 @import "templates/single-post";
+@import "templates/department-page";
 
 // Harveys Custom
 @import "harveys/site.scss";
