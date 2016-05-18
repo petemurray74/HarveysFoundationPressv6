@@ -32,21 +32,24 @@ function harv_sale_head()
 
 
 // ADDS OPTIONAL DEPTARTMENT INFO 
-add_action('foundationpress_before_sidebar','harv_dept_info');
+add_action('foundationpress_after_content','harv_dept_info');
 function harv_dept_info()
 {
     $post_object = get_field('choose_department');
-
     if( $post_object ): 
-
         // override $post
         $post = $post_object;
         setup_postdata( $post ); 
-
         ?>
         <?php the_content(); ?>
         <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly
     endif; 
+}
+
+// ADD DEPARTMENT SPECIFIC NEWS
+add_action('foundationpress_after_content','harv_dept_news');
+function harv_dept_news() {
+echo('code here to choose news from this department. could be programmed to disapear after particular date. could be links to offers eg GWPs');		
 }
 
 // ADDS LOGOS TO AREA BENEATH CONTENT
@@ -63,9 +66,11 @@ if( $post_object ):
 	setup_postdata( $post ); 
 
 	?>
-    <div>
-    	<?php the_content(); ?>
-    </div>
+	<div class="logos-wrapper">
+		<div class="row small-up-2 medium-up-4 large-up-6 logos">
+			<?php the_content(); ?>
+		</div>
+	</div>
     <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly 
 	endif; 		
 }			
@@ -146,9 +151,5 @@ function MailchimpGoal()
 add_action('wp_head', 'MailchimpGoal','30');
 
 
-// ADD DEPARTMENT SPECIFIC NEWS
-add_action('foundationpress_before_sidebar','harv_dept_news');
-function harv_dept_news() {
-echo('code here to choose news from this department. could be programmed to disapear after particular date');		
-}
+
 ?>
