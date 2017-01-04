@@ -12,7 +12,7 @@
 ?>
 
 		</section>
-		<div class="sub-footer-container">
+		<div class="sub-footer-container genericwrapper">
 			<div class="row">
 				<?php do_action( 'foundationpress_before_footer' ); ?>
 				<?php dynamic_sidebar( 'footer-widgets' ); ?>

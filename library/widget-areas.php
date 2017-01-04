@@ -23,7 +23,7 @@ function foundationpress_sidebar_widgets() {
 	  'id' => 'footer-widgets',
 	  'name' => __( 'Footer widgets', 'foundationpress' ),
 	  'description' => __( 'Drag widgets to this footer container', 'foundationpress' ),
-	  'before_widget' => '<article id="%1$s" class="large-3 medium-4 columns widget %2$s">',
+	  'before_widget' => '<article id="%1$s" class="small-centered large-8 widget %2$s">',
 	  'after_widget' => '</article>',
 	  'before_title' => '<h3 class="widget-title">',
 	  'after_title' => '</h3>',

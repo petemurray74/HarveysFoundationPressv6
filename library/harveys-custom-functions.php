@@ -32,7 +32,7 @@ function harv_sale_head()
 
 
 // ADDS OPTIONAL DEPTARTMENT INFO 
-add_action('foundationpress_after_content','harv_dept_info');
+add_action('foundationpress_page_before_entry_content','harv_dept_info');
 function harv_dept_info()
 {
     $post_object = get_field('choose_department');
@@ -46,11 +46,6 @@ function harv_dept_info()
     endif; 
 }
 
-// ADD DEPARTMENT SPECIFIC NEWS
-add_action('foundationpress_after_content','harv_dept_news');
-function harv_dept_news() {
-echo('code here to choose news from this department. could be programmed to disapear after particular date. could be links to offers eg GWPs');		
-}
 
 // ADDS LOGOS TO AREA BENEATH CONTENT
 // note: new action created
@@ -66,7 +61,7 @@ if( $post_object ):
 	setup_postdata( $post ); 
 
 	?>
-	<div class="logos-wrapper">
+	<div class="logos-wrapper genericwrapper">
 		<div class="row small-up-2 medium-up-4 large-up-6 logos">
 			<?php the_content(); ?>
 		</div>

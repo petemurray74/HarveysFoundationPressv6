@@ -52,6 +52,7 @@ section[role="document"]{
     margin-top:1.5rem;
 }
 
+
 // Reset margin and padding on figure element
 figure { 
 	margin: 0; 
@@ -95,19 +96,33 @@ img.alignright {
 	margin: rem-calc(7) 0 rem-calc(7) rem-calc(24);
 }
 
+
+.genericwrapper
+{
+padding: rem-calc(40) 0;
+border-top: 1px solid #ccc;
+}
+
 .main-content-wrap{
-padding:3rem 0;
 background:#eee;
 }
 
 .content-image-box {
-padding-right:3rem;
+padding:0 rem-calc(40);
 }
 
 .content-image-box-area-wrap {
-padding:3rem 0;
 background:#fff;
 }
+
+.logos-wrapper {
+background:#fff;
+}
+
+.site-wide-updates-container  {
+background:#eee;
+}
+
 
 
 /*

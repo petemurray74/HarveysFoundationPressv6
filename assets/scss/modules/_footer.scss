@@ -4,9 +4,6 @@
 	border-top: 1px solid #ccc;
 	background-color:$primary-color;
 	padding:rem-calc(40);
-	-moz-box-shadow: 0px -2px 2px #DCD5C6;
-	-webkit-box-shadow: 0px -2px 2px #DCD5C6;
-	box-shadow: 0px -2px 2px #DCD5C6;
 	color:#F3F0ED;
 
 	ul {
@@ -73,6 +70,19 @@
 	width: 100%;
 	border-top: 1px solid #ccc;
 	padding:rem-calc(40);
-	margin-top: rem-calc(60);
 	background-color:#ffffff;
+    background-image: url(../images/restaurant-bk.jpg);
+    background-size: cover;
+    background-position-y: -384px;
+		article {
+		background: rgba(54, 54, 54, 0.75);
+		text-align: center;
+		padding: 2em;
+		color: #fff;
+			a{
+			color: #fff;
+			}
+		}
 }
+
+

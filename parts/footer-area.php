@@ -1,5 +1,5 @@
 
-<div class="footer-container">
+<div class="footer-container genericwrapper">
 <div class="row">
         <article class="large-4 small-12 columns">
             <h3 class="widget-title">The Store</h3>
