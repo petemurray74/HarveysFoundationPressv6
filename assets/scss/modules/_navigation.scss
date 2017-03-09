@@ -64,9 +64,10 @@
     font-weight: bold;
     font-size: 0.8rem;
     line-height: 1;
+	text-decoration:none;
 
     &:hover:not(.button) {
-      background-color: #42525D;
+      background-color: scale-color($harveys-primary-color, $lightness: -14%);
     }
   }
 
