@@ -8,11 +8,11 @@
   .menu a {
     height: 45px;
     line-height: 45px;
-    color: #e6e6e6;
+    color: #ffffff;
     padding-top: 0;
 	text-decoration:none;
     padding-bottom: 0;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 0.8rem;
 
     &:hover:not(.button) {
@@ -21,13 +21,16 @@
     }
   }
 
+  /*
+  added because this rule in navigaton.scss is giving menu text an extra 1rem of padding which it doesn't need. Has the .menu-text class gone from the LI ?? Is that the cause?
+  */
   .menu>li:not(.menu-text)>a {
-    padding: 1rem;
+    padding-top: 0;
   }
 
   .menu li:not(:last-child) {
     @include breakpoint(medium) {
-      border-right: 1px solid #4e4e4e;
+      border-right: 1px solid #d8a1a1;
     }
   }
 
