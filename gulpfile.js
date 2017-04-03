@@ -48,7 +48,7 @@ var PATHS = {
     //'assets/components/foundation-sites/js/foundation.interchange.js',
     //'assets/components/foundation-sites/js/foundation.magellan.js',
     'assets/components/foundation-sites/js/foundation.offcanvas.js',
-    //'assets/components/foundation-sites/js/foundation.orbit.js',
+    'assets/components/foundation-sites/js/foundation.orbit.js',
     'assets/components/foundation-sites/js/foundation.responsiveMenu.js',
     'assets/components/foundation-sites/js/foundation.responsiveToggle.js',
     //'assets/components/foundation-sites/js/foundation.reveal.js',
@@ -57,9 +57,13 @@ var PATHS = {
     //'assets/components/foundation-sites/js/foundation.tabs.js',
     //'assets/components/foundation-sites/js/foundation.toggler.js',
     //'assets/components/foundation-sites/js/foundation.tooltip.js',
+	'assets/components/foundation-sites/js/foundation.util.keyboard.js',
+	'assets/components/foundation-sites/js/foundation.util.motion.js',
+	'assets/components/foundation-sites/js/foundation.util.timerAndImageLoader.js',
+	'assets/components/foundation-sites/js/foundation.util.touch.js',
 
     // Motion UI
-    //'assets/components/motion-ui/motion-ui.js',
+    'assets/components/motion-ui/motion-ui.js',
 
     // Include your own custom scripts (located in the custom folder)
     'assets/javascript/custom/*.js',

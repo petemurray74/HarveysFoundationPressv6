@@ -20,7 +20,7 @@
 
 // Third-party libraries
 //@import 'font-awesome';
-//@import 'motion-ui';
+@import 'motion-ui';
 
 // Foundation global styles
 @include foundation-global-styles;
@@ -48,7 +48,7 @@
 //@include foundation-label;
 //@include foundation-media-object;
 @include foundation-off-canvas;
-//@include foundation-orbit;
+@include foundation-orbit;
 @include foundation-pagination;
 //@include foundation-progress-bar;
 //@include foundation-slider;
@@ -66,8 +66,8 @@
 // @include foundation-flex-classes;
 
 // Motion UI
-//@include motion-ui-transitions;
-//@include motion-ui-animations;
+@include motion-ui-transitions;
+@include motion-ui-animations;
 
 /*
   My custom styles:
