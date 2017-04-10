@@ -11,7 +11,7 @@ get_header(); ?>
 		<?php // get_template_part( 'parts/check-if-sidebar-exist' ); ?>
 		<?php // SHOW MAIN CONTENT
 		do_action( 'foundationpress_before_content' ); ?>
-		<div class="small-12 large-8 columns">
+		<div class="small-12 medium-8 columns">
 			<?php // SHOW SLIDESHOW 
 			if( have_rows('slides') ): ?>
 			<div class="orbit" role="region" aria-label="Harveys"  data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;" data-infinite-wrap="true" data-timer-delay="5000" data-bullets="false" data-orbit>
@@ -27,7 +27,7 @@ get_header(); ?>
 					$text = get_sub_field('slide_text');
 					$background = get_sub_field('slide_background');
 					?>
-				<li class="orbit-slide">
+				<li class="orbit-slide text-slide">
 				  <div style="background:<?php echo($background); ?>">
 					<h3 class="text-center"><?php echo($heading); ?></h3>
 					<p class="text-center"><?php echo($text); ?></p>
@@ -38,12 +38,14 @@ get_header(); ?>
 				else if ($slide_type == "image") {
 					$image = get_sub_field('slide_image');
 					$caption = get_sub_field('slide_caption');
-					$background = get_sub_field('slide_background');
+					//$background = get_sub_field('slide_background');
 										?>
 					<li class="orbit-slide">
-					  <div style="<?php $background; ?>">
+					  <div>
 						 <img class="orbit-image" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
-						 <figcaption class="orbit-caption"><?php echo($caption); ?></figcaption>
+						 <?php if ($caption){?>
+							 <figcaption class="orbit-caption"><?php echo($caption); ?></figcaption>
+						 <?php } ?>	 
 					  </div>
 					</li>
 				<?php 
@@ -56,7 +58,7 @@ get_header(); ?>
 			</div>
 			<?php endif; ?>
 		</div>
-		<div class="small-12 large-4 columns">
+		<div class="small-12 medium-4 columns">
 			<?php while ( have_posts() ) : the_post(); ?>
 				<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 					<?php do_action('foundationpress_page_before_entry_content'); ?>
@@ -72,10 +74,9 @@ get_header(); ?>
 	</div>	
 </div>	
 <div class="content-image-box-area-wrap genericwrapper">
-	<div class="row">
 		<?php // SHOW CONTENT BOXES 
 			if( have_rows('content_box') ): ?>
-			<div class="row small-up-2 medium-up-3 large-up-3" data-equalizer data-equalize-by-row="true">
+			<div class="row small-up-1 medium-up-2 large-up-3" data-equalizer data-equalize-by-row="true">
 			<?php while( have_rows('content_box') ): the_row(); 
 				$image = get_sub_field('content_box_image');
 				$text = get_sub_field('content_box_text');
@@ -89,7 +90,6 @@ get_header(); ?>
 					</div>
 				</div>	
 			<?php endwhile; ?>
-			</div>
 		<?php endif; ?>
 	</div>
 </div>	
