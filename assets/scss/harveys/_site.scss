@@ -19,18 +19,42 @@ letter-spacing: -0.02em;
 
 //----------SUB HEADER ----------------//
 
-.harvey-sub-head-wrap {
+.harvey-header-logo-wrap {
     background: #ffffff;
-	padding:2em 0;
+	padding:rem-calc(25) 0;
+	@include breakpoint(large) {
+    padding:rem-calc(30) 0;
+	}
 }
 
 //---------SECOND MENU----------------//
 
 
+.harvey-second-menu-wrap {
+background:#f1f1f1;
+}
+
+.secondary-menu {
+float:left;
+margin:0; 	
+}
+
+.secondary-menu li:last-child {
+    border: 0;
+    margin-right: 0;
+    padding-right: 2px;
+}
+
+
 .secondary-menu li a {
 text-decoration: none;
-color: #333;
-font-size: 0.8125rem;
+color: #888;
+font-size: rem-calc(12);
+}
+
+.secondary-menu li a:hover {
+text-decoration: underline;
+color: #000;
 }
 
 .secondary-menu li {
@@ -38,8 +62,8 @@ display: inline-block;
 border-right: 1px dotted #d8d8d8;
 margin: 0 8px 0 0;
 margin: 0 rem-calc(8) 0 0;
-padding: 0 8px 0 0;
-padding: 0 rem-calc(8) 0 0;
+padding: 1px 8px 3px 0;
+padding: rem-calc(1) rem-calc(8) rem-calc(3) 0;
 }
 
 //----------CONTENT AREA-------------------------//
@@ -107,13 +131,44 @@ border-top: 1px solid #ccc;
 background:#eee;
 }
 
+//CONTENT BOXES
+
+
+
 .content-image-box {
-padding:0 rem-calc(40);
+	//extra padding for single column on small screens
+	padding:0 15%;
+  
+  @include breakpoint(medium) {
+    padding:0 rem-calc(30);
+  }
+  @include breakpoint(large) {
+    padding:0 rem-calc(20);
+  }
+
 }
 
 .content-image-box-area-wrap {
-background:#fff;
+background:$harveys-primary-color;
 }
+
+.content-image-box{
+    margin-bottom:1em;
+}
+	
+.content-text-box{
+    padding: 1em;
+	h3{
+	font-family:$body-font-family;
+	font-size:rem-calc(18);
+	color:#666;
+	margin-bottom:rem-calc(5);
+	font-weight:bold;
+	}
+	p:last-child{
+		margin-bottom:0;
+		}
+	}
 
 .logos-wrapper {
 background:#fff;

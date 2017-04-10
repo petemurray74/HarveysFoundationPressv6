@@ -14,6 +14,7 @@
 	<head>
 		<meta charset="<?php bloginfo( 'charset' ); ?>" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title><?php the_title(); ?> - Harveys of Halifax</title>
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class(); ?>>
@@ -32,20 +33,17 @@
 		<div class="title-bar" data-responsive-toggle="site-navigation">
 			<button class="menu-icon" type="button" data-toggle="mobile-menu"></button>
 			<div class="title-bar-title">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+				<p>Menu</p>
 			</div>
 		</div>
 
 		<nav id="site-navigation" class="main-navigation top-bar" role="navigation">
 			<div class="row">
-			<div class="top-bar-left"></div>
-
-			<div class="top-bar-right">
-				<?php foundationpress_top_bar_r(); ?>
-
+			<div class="top-bar-left">
+			<?php foundationpress_top_bar_r(); ?>	
 				<?php if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) === 'topbar' ) : ?>
 					<?php get_template_part( 'template-parts/mobile-top-bar' ); ?>
-				<?php endif; ?>
+				<?php endif; ?>			
 			</div>
 			</div>
 		</nav>

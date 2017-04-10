@@ -1,13 +1,20 @@
 .top-bar {
 
+	.top-bar-left{
+	@include breakpoint(medium only) 
+		{ 
+		padding-left:rem-calc(6);
+		}
+	}
+
   .menu .home a {
     font-size: 1rem;
     color: #B9B9B9;
   }
 
   .menu a {
-    height: 45px;
-    line-height: 45px;
+    height: 40px;
+    line-height: 40px;
     color: #ffffff;
     padding-top: 0;
 	text-decoration:none;
@@ -16,7 +23,7 @@
     font-size: 0.8rem;
 
     &:hover:not(.button) {
-      color:#2a2a2a;
+      color:#eeeeee;
 	  background-color:scale-color($harveys-primary-color, $lightness: -14%);
     }
   }
@@ -26,17 +33,38 @@
   */
   .menu>li:not(.menu-text)>a {
     padding-top: 0;
+	@include breakpoint(medium) {
+	padding-left:rem-calc(10);
+	padding-right:rem-calc(10);
+	}
+	@include breakpoint(large) {
+	padding-left:rem-calc(15);
+	padding-right:rem-calc(15);
+	}
   }
 
   .menu li:not(:last-child) {
     @include breakpoint(medium) {
-      border-right: 1px solid #d8a1a1;
+	  border-right: 1px solid scale-color($harveys-primary-color, $lightness: -10%)
     }
   }
+  
+  .current-menu-item{
+  @include breakpoint(medium){
+	background-color: scale-color($harveys-primary-color, $lightness: 10%)
+	}
+  }
+  
+   .current-menu-item a{
+  @include breakpoint(small-only){
+	font-weight:bold;
+	}
+  }
+  
 
   .dropdown.menu .submenu {
-    background-color: #121212;
-    color: #e6e6e6;
+    background-color: $harveys-primary-color;
+    color: #ffffff;
     border: 0;
   }
 
@@ -59,8 +87,7 @@
     display: none;
   }
 
-  .title a {
-    font-size: 1rem;
-    color: #B9B9B9;
+  p {
+    margin-bottom:0;
   }
 }

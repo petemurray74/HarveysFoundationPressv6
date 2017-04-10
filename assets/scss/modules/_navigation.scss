@@ -1,5 +1,5 @@
 // Navigation breakpoints
-.desktop-menu, .top-bar-left {
+.desktop-menu, .top-bar-right {
   @include show-for(medium);
 }
 
@@ -41,13 +41,6 @@
 
 }
 
-.title-bar-title {
-  a {
-    font-size: 1rem;
-    color: #B9B9B9;
-  }
-}
-
 // Tablet and desktop menu
 .top-bar {
   .menu .home a {
@@ -74,7 +67,11 @@
   .menu .active > a { background-color: lighten($outer-space, 10%); }
 
   .menu>li:not(.menu-text)>a { padding: 1rem; }
-  .menu li:not(:last-child) { border-right: 1px solid #4e4e4e; }
+  .menu li:not(:last-child) { 
+  @include breakpoint(large) {
+	border-right: 1px solid #4e4e4e; 
+	}
+  }
 
   .dropdown.menu .submenu { border: 0; }
   .dropdown.menu .has-submenu.is-down-arrow a { padding-right: 1rem; }
