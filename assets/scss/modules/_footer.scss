@@ -5,6 +5,8 @@
 	background-color:$harveys-primary-color;
 	padding:rem-calc(40);
 	color:#F3F0ED;
+	
+	
 
 	ul {
 		list-style-type: none;
@@ -20,6 +22,18 @@
 	a:hover{
 	color:#F3F0ED;
 	text-decoration:none;
+	}
+	
+	article{
+		@include breakpoint(small only){
+		margin-bottom: 2rem;
+		border-bottom: 1px dotted #fff;
+		padding-bottom: 3rem;
+		}
+		@include breakpoint(medium only){
+		padding-left:0.5em;
+		padding-right:0.5em;
+		}
 	}
 
 	.social_media_wrap {
@@ -60,7 +74,18 @@
 
 	p {
 	margin: 0 0 rem-calc(24);
-	line-height: 1.714285714;
+	line-height: 1.6;
+		@include breakpoint(medium only)
+		{
+		font-size:rem-calc(14);
+		}
+	}
+	
+	li {
+		@include breakpoint(medium only)
+		{
+		font-size:rem-calc(14);
+		}
 	}
 
 }

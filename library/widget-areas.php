@@ -12,7 +12,7 @@ function foundationpress_sidebar_widgets() {
 	  'id' => 'sidebar-1',
 	  'name' => __( 'Main Sidebar', 'foundationpress' ),
 	  'description' => __( 'Drag widgets to this sidebar container.', 'foundationpress' ),
-	  'before_widget' => '<article id="%1$s" class="widget %2$s"><div class="small-12 large-4 columns">',
+	  'before_widget' => '<article id="%1$s" class="widget %2$s"><div class="small-12 medium-4 columns">',
 	  'after_widget' => '</div></article>',
 	  'before_title' => '<h3 class="widget-title">',
 	  'after_title' => '</h3>',
